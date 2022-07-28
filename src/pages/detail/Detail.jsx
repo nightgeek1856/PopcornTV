@@ -46,11 +46,17 @@ const Detail = () => {
                                         ))
                                     }
                                 </div>
-                               
                                 <div className="overview">
                                     {
                                         
                                             <span className="overview">{item.vote_average.toFixed(1)} <i className="bx bx-star"></i></span>
+                                        
+                                    }
+                                </div>
+                                <div className="overview">
+                                    {
+                                        
+                                            <span className="overview">Status : {item.status}</span>
                                         
                                     }
                                 </div>
