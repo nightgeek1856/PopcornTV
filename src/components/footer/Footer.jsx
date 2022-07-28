@@ -20,14 +20,18 @@ const Footer = () => {
                 <div className="footer__content__menus">
                     <div className="footer__content__menu">
                         <Link to="/">Home</Link>
-                        <Link to="/">Contact us</Link>
+                        
+                    </div>
+                    <div className="footer__content__menu">
+                    <Link to="/">Contact us</Link>
                     </div>
                     <div className="footer__content__menu">
                         <Link to="/live">Live</Link>
-                        <Link to="/">FAQ</Link>
                     </div>
                     <div className="footer__content__menu">
                         <Link to="/top_rated">Must watch</Link>
+                    </div>
+                    <div className="footer__content__menu">
                         <Link to="/">Recent release</Link>
                     </div>
                 </div>

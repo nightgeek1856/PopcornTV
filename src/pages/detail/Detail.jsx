@@ -46,6 +46,14 @@ const Detail = () => {
                                         ))
                                     }
                                 </div>
+                               
+                                <div className="overview">
+                                    {
+                                        
+                                            <span className="overview">{item.vote_average.toFixed(1)} <i className="bx bx-star"></i></span>
+                                        
+                                    }
+                                </div>
                                 <p className="overview">{item.overview}</p>
                                 <div className="cast">
                                     <div className="section__header">

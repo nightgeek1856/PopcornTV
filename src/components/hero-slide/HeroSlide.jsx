@@ -41,11 +41,12 @@ const HeroSlide = () => {
             <Swiper
                 modules={[Autoplay,Navigation]}
                 navigation={true}
-                grabCursor={true}
+                grabCursor={false}
                 spaceBetween={0}
                 slidesPerView={1}
                 loop={true}
-                autoplay={{delay: 7000}}
+                autoplay={{delay: 5000, disableOnInteraction: false}}
+                speed={1000}
             >
                 {
                     movieItems.map((item, i) => (
