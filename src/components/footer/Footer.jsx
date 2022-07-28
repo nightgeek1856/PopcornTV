@@ -23,7 +23,7 @@ const Footer = () => {
                         
                     </div>
                     <div className="footer__content__menu">
-                    <Link to="/">Contact us All</Link>
+                    <Link to="/">Contact us</Link>
                     </div>
                     <div className="footer__content__menu">
                         <Link to="/live">Live</Link>
