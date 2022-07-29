@@ -3,6 +3,14 @@
 .hero-slide {
     margin-bottom: 3rem;
 }
+.swiper-button-prev,.swiper-button-next {
+    color: rgb(255, 255, 255); 
+    opacity: .4;
+    &:hover{
+        opacity:1;
+      }
+}
+
 
 .hero-slide__item {
     padding: 12rem 2rem;

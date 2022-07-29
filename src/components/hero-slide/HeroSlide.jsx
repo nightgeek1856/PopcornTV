@@ -40,7 +40,7 @@ const HeroSlide = () => {
         <div className="hero-slide">
             <Swiper
                 modules={[Autoplay,Navigation]}
-                navigation={true}
+                navigation= {true}
                 grabCursor={false}
                 spaceBetween={0}
                 slidesPerView={1}
