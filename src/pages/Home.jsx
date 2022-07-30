@@ -11,6 +11,7 @@ const Home = () => {
     return (
         <>
             <HeroSlide/>
+            
             <div className="container">
                 <div className="section mb-3">
                     <div className="section__header mb-2">

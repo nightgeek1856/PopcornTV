@@ -46,7 +46,7 @@ const MovieGrid = props => {
                 const params = {
                     query: keyword
                 }
-                response = await tmdbApi.search(props.category, {params});
+                response = await tmdbApi.search({params});
             }
             setItems(response.results);
             setTotalPage(response.total_pages);
@@ -72,7 +72,7 @@ const MovieGrid = props => {
                 page: page + 1,
                 query: keyword
             }
-            response = await tmdbApi.search(props.category, {params});
+            response = await tmdbApi.search({params});
         }
         setItems([...items, ...response.results]);
         setPage(page + 1);
@@ -80,9 +80,7 @@ const MovieGrid = props => {
 
     return (
         <>
-            <div className="section mb-3">
-                <MovieSearch category={props.category} keyword={keyword}/>
-            </div>
+        
             <div className="movie-grid">
                 {
                     items.map((item, i) => <MovieCard category={props.category} item={item} key={i}/>)
@@ -99,7 +97,7 @@ const MovieGrid = props => {
     );
 }
 
-const MovieSearch = props => {
+export const MovieSearch = props => {
 
     const history = useHistory();
 
@@ -131,11 +129,11 @@ const MovieSearch = props => {
         <div className="movie-search">
             <Input
                 type="text"
-                placeholder="Enter keyword"
+                placeholder="Search here"
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
             />
-            <Button className="small" onClick={goToSearch}>Search</Button>
+            <Button className="small" onClick={goToSearch}><i className="bx bx-search"></i></Button>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 
 import logo from '../../assets/tmovie.png';
-
+import {MovieSearch} from '../movie-grid/MovieGrid';
 const headerNav = [
     {
         display: 'Home',
@@ -16,9 +16,10 @@ const headerNav = [
         path: '/movie'
     },
     {
-        display: 'TV Series',
+        display: 'TV',
         path: '/tv'
-    }
+    },
+    
 ];
 
 const Header = () => {
@@ -45,11 +46,17 @@ const Header = () => {
     return (
         <div ref={headerRef} className="header">
             <div className="header__wrap container">
+                
                 <div className="logo">
                     <img src={logo} alt="" />
                     <Link to="/">PopcornTV</Link>
                 </div>
+                
+                <MovieSearch/>
+                
                 <ul className="header__nav">
+                
+                
                     {
                         headerNav.map((e, i) => (
                             <li key={i} className={`${i === active ? 'active' : ''}`}>
@@ -59,8 +66,14 @@ const Header = () => {
                             </li>
                         ))
                     }
+                    
+                    
+                    
                 </ul>
+                
+
             </div>
+            
         </div>
     );
 }

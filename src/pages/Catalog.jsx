@@ -14,7 +14,7 @@ const Catalog = () => {
     return (
         <>
             <PageHeader>
-                {category === cate.movie ? 'Movies' : category===cate.popular ? 'Trending Movies' : category===cate.top_rated ? 'Top Rated Movies' : category===cate.top_ratedtv ? 'Top Rated TV' : category===cate.trendingtv ? 'Trending TV' : category===cate.live ? 'Ongoing TV Series' : 'TV'}
+                {category === cate.movie ? 'Movies' : category === cate.tv ? 'TV' : category===cate.popular ? 'Trending Movies' : category===cate.top_rated ? 'Top Rated Movies' : category===cate.top_ratedtv ? 'Top Rated TV' : category===cate.trendingtv ? 'Trending TV' : category===cate.live ? 'Ongoing TV Series' : 'Search Result'}
             </PageHeader>
             <div className="container">
                 <div className="section mb-3">
