@@ -28,7 +28,7 @@ const Footer = () => {
                         <Link to="/top_rated">Must watch</Link>
                     </div>
                     <div className="footer__content__menu">
-                        <Link to="/">Recent release</Link>
+                        <Link to="/latest">Recent release</Link>
                     </div>
                 </div>
             </div>

@@ -30,6 +30,9 @@ const MovieGrid = props => {
                     case category.top_rated:
                         response = await tmdbApi.getMoviesList(movieType.top_rated, {params});
                         break;
+                    case category.latest:
+                        response = await tmdbApi.getMoviesList(movieType.now_playing, {params});
+                        break;
                     case category.popular:
                         response = await tmdbApi.getMoviesList(movieType.popular, {params});
                         break;
