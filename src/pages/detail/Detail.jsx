@@ -7,6 +7,7 @@ import apiConfig from '../../api/apiConfig';
 import './detail.scss';
 import CastList from './CastList';
 import VideoList from './VideoList';
+import Reviews from './Reviews';
 
 import MovieList from '../../components/movie-list/MovieList';
 
@@ -67,8 +68,16 @@ const Detail = () => {
                                     </div>
                                     <CastList id={item.id}/>
                                 </div>
+                                
                             </div>
+                            
                         </div>
+                        <div className="container">
+                                    <div className="section__header">
+                                        <h2 className="fullreviews">Reviews</h2>
+                                    </div>
+                                    <Reviews id={item.id}/>
+                                </div>
                         <div className="container">
                             <div className="section mb-3">
                                 <VideoList id={item.id}/>

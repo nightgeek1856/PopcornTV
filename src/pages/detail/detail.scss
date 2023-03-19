@@ -103,7 +103,40 @@
 
         &__name {
             font-size: 0.8rem;
+            margin-bottom: 0.5rem;
         }
+        &__char {
+            font-size: 0.8rem;
+            opacity: 50%;
+        }
+
+    }
+}
+.fullreviews{
+    font-size: 3rem;
+    margin-left: 4rem;
+}
+.reviews {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(90px, 1fr));
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 10px;
+
+    &__item {
+        
+
+        &__name {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            
+        }
+        &__content {
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+        }
+        margin-bottom: 1rem;
     }
 }
 
