@@ -40,6 +40,7 @@ const MovieList = props => {
                 grabCursor={true}
                 spaceBetween={10}
                 slidesPerView={'auto'}
+                navigation= {true}
             >
                 {
                     items.map((item, i) => (
